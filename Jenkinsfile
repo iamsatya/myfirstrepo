@@ -9,7 +9,7 @@ pipeline {
         sh "echo building from main branch"
       }
     }
-    stage('build-master) {
+    stage('build-master') {
           when {
             branch master
           }
