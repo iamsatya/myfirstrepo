@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build-main') {
       when {
-        branch main
+        branch 'main'
       }
       steps{
         sh "echo building from main branch"
@@ -11,7 +11,7 @@ pipeline {
     }
     stage('build-master') {
           when {
-            branch master
+            branch 'master'
           }
           steps{
             sh "echo building from master branch"
