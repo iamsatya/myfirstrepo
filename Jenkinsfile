@@ -11,7 +11,7 @@ pipeline {
     }
     stage('build-master') {
           when {
-            branch master
+            branch 'master'
           }
           steps{
             sh "echo building from master branch"
